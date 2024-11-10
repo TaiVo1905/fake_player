@@ -32,80 +32,80 @@ const app = {
         {
             name: 'Cha',
             singer: 'Quách Beem',
-            path: '../assets/songs/Cha-QuachBeem-6283468.mp3',
-            image: '../assets/imageAuthor/quachBeem.jpg'
+            path: './assets/songs/Cha-QuachBeem-6283468.mp3',
+            image: './assets/imageAuthor/quachBeem.jpg'
         },
         {
             name: 'Điếu thuốc tàn',
             singer: 'Lâm Chánh Khang',
-            path: '../assets/songs/DieuThuocTanNguoiTrongGiangHo6OST-LamChanKhang-5488925.mp3',
-            image: '../assets/imageAuthor/lamChanhKhang.jpg'
+            path: './assets/songs/DieuThuocTanNguoiTrongGiangHo6OST-LamChanKhang-5488925.mp3',
+            image: './assets/imageAuthor/lamChanhKhang.jpg'
         },
         {
             name: 'Đời là thế thôi',
             singer: 'Quách Beem',
-            path: '../assets/songs/DoiLaTheThoi-QuachBeem_4cmjg.mp3',
-            image: '../assets/imageAuthor/quachBeem.jpg'
+            path: './assets/songs/DoiLaTheThoi-QuachBeem_4cmjg.mp3',
+            image: './assets/imageAuthor/quachBeem.jpg'
         },
         {
             name: 'Đơn giản anh yêu em',
             singer: 'Đức Phát',
-            path: '../assets/songs/DonGianAnhYeuEm-DucPhat-7857286.mp3',
-            image: '../assets/imageAuthor/ducPhat.jpg'
+            path: './assets/songs/DonGianAnhYeuEm-DucPhat-7857286.mp3',
+            image: './assets/imageAuthor/ducPhat.jpg'
         },
         {
             name: 'Giả vờ thương anh có được không',
             singer: 'Chu Bin',
-            path: '../assets/songs/GiaVoThuongAnhDuocKhong-ChuBin-4858628.mp3',
-            image: '../assets/imageAuthor/chuBin.jpg'
+            path: './assets/songs/GiaVoThuongAnhDuocKhong-ChuBin-4858628.mp3',
+            image: './assets/imageAuthor/chuBin.jpg'
         },
         {
             name: 'Hà giang ơi',
             singer: 'Quách Beem',
-            path: '../assets/songs/HaGiangOi-QuachBeem-6260097.mp3',
-            image: '../assets/imageAuthor/quachBeem.jpg'
+            path: './assets/songs/HaGiangOi-QuachBeem-6260097.mp3',
+            image: './assets/imageAuthor/quachBeem.jpg'
         },
         {
             name: 'Monsters',
             singer: 'Nightcore',
-            path: '../assets/songs/ISeeYourMonsters-Nightcore-5915569.mp3',
-            image: '../assets/imageAuthor/nightCore.jpg'
+            path: './assets/songs/ISeeYourMonsters-Nightcore-5915569.mp3',
+            image: './assets/imageAuthor/nightCore.jpg'
         },
         {
             name: 'Khi yêu nào đâu ai muốn',
             singer: 'Trịnh Thiên An',
-            path: '../assets/songs/KhiYeuNaoDauAiMuon-TrinhThienAn-7624200.mp3',
-            image: '../assets/imageAuthor/trinhThienAn.jpg'
+            path: './assets/songs/KhiYeuNaoDauAiMuon-TrinhThienAn-7624200.mp3',
+            image: './assets/imageAuthor/trinhThienAn.jpg'
         },
         {
             name: 'Khóc cho đấng sinh thành',
             singer: 'Hồ Quang Hiếu',
-            path: '../assets/songs/KhocChoDangSinhThanhThieuNienRaGiangHoOST-HoQuangHieu-5533643.mp3',
-            image: '../assets/imageAuthor/hoQuangHieu.jpg'
+            path: './assets/songs/KhocChoDangSinhThanhThieuNienRaGiangHoOST-HoQuangHieu-5533643.mp3',
+            image: './assets/imageAuthor/hoQuangHieu.jpg'
         },
         {
             name: 'Thay thế',
             singer: 'Hồ Gia Hùng',
-            path: '../assets/songs/ThayThe-HoGiaHungHKT-5308924.mp3',
-            image: '../assets/imageAuthor/hoGiaHung.jpg'
+            path: './assets/songs/ThayThe-HoGiaHungHKT-5308924.mp3',
+            image: './assets/imageAuthor/hoGiaHung.jpg'
         },
         {
             name: 'Cô đơn trong nhà mình',
             singer: 'Hoài Lâm',
-            path: '../assets/songs/CÔ ĐƠN TRONG NHÀ MÌNH  HOÀI LÂM.mp3',
-            image: '../assets/imageAuthor/hoaiLam.jpg'
+            path: './assets/songs/CÔ ĐƠN TRONG NHÀ MÌNH  HOÀI LÂM.mp3',
+            image: './assets/imageAuthor/hoaiLam.jpg'
         },
         {
             name: 'Cô đơn trong nhà mình',
             singer: 'Hoài Lâm',
-            path: '../assets/songs/CÔ ĐƠN TRONG NHÀ MÌNH  HOÀI LÂM.mp3',
-            image: '../assets/imageAuthor/hoaiLam.jpg'
+            path: './assets/songs/CÔ ĐƠN TRONG NHÀ MÌNH  HOÀI LÂM.mp3',
+            image: './assets/imageAuthor/hoaiLam.jpg'
         },
         {
             name: 'Nước ngoài',
             singer: 'Dương Mạnh Quỳnh',
-            path: '../assets/songs/nuocNgoai.m4a',
-            image: '../assets/imageAuthor/phanManhQuynh.jpg'
+            path: './assets/songs/nuocNgoai.m4a',
+            image: './assets/imageAuthor/phanManhQuynh.jpg'
         }
     ],
     setConfig: function(key, value) {
