@@ -20,6 +20,8 @@ const audio = $('#audio');
 const play = $('.play');
 const inputRange = $("input[type='range']");
 const songList = $("#songList");
+const randomSong = $(".control > i:nth-child(5)");
+const repeatSong = $(".control > i:nth-child(1)");
 const palyer_sotre_key = 'Nhac_cua_Tai';
 
 const app = {
@@ -54,7 +56,7 @@ const app = {
             image: './assets/imageAuthor/ducPhat.jpg'
         },
         {
-            name: 'Giả vờ thương anh có được không',
+            name: 'Giả vờ thương anh',
             singer: 'Chu Bin',
             path: './assets/songs/GiaVoThuongAnhDuocKhong-ChuBin-4858628.mp3',
             image: './assets/imageAuthor/chuBin.jpg'
@@ -139,8 +141,6 @@ const app = {
     },
     handleEvents: function () {
         const cdWidth = cd.offsetWidth;
-        const randomSong = $(".control > i:nth-child(5)");
-        const repeatSong = $(".control > i:nth-child(1)");
         document.onscroll = function () {
             const scrollTop = window.scrollY || document.documentElement.scrollTop;
             const newCdWidth = cdWidth - scrollTop;
@@ -204,6 +204,7 @@ const app = {
             this.render();
             audio.play();
             this.scrolltoActiveSong();
+            this.setConfig("currentIndex", this.currentIndex);
         }
         
         // next song
@@ -216,6 +217,7 @@ const app = {
             this.render();
             audio.play();
             this.scrolltoActiveSong();
+            this.setConfig("currentIndex", this.currentIndex);
         }
 
         // Xử lý bật tắt random
@@ -242,6 +244,7 @@ const app = {
             this.render();
             audio.play();
             this.scrolltoActiveSong();
+            this.setConfig("currentIndex", this.currentIndex);
         }
 
         // Khi click vào bài hát
@@ -256,6 +259,7 @@ const app = {
                     audio.play();
                 }
             }
+            this.setConfig("currentIndex", this.currentIndex);
         }
     },
     scrolltoActiveSong: function() {
@@ -297,7 +301,9 @@ const app = {
         this.isRepeat = this.config["isRepeat"];
         this.isRandom = this.config["isRandom"];
         audio.currentTime = this.config["currentTime"] || 0;
-
+        this.currentIndex = this.config["currentIndex"] || 0;
+        randomSong.classList.toggle("active", this.isRandom);
+        repeatSong.classList.toggle("active", this.isRepeat);
         // Định nghĩa thuộc tính cho object
         this.defineProperties();
         

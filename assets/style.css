@@ -37,14 +37,6 @@ i.active {
     text-align: center;
 }
 
-.dashBoard h1 {
-    display: inline-block;
-    transform: translateX(-50%);
-    margin-left: 50%;
-    width: 330px;
-    text-align: center;
-}
-
 .dashBoard .cd {
     width: 200px;
 }
