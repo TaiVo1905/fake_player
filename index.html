@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhạc của Tài</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dashBoard">
+            <header>
+                <h6>now playing:</h6>
+                <h1>ten bai hat</h1>
+            </header>
+            <div class="cd">
+                <div class="cd-thumb">
+            
+                </div>
+            </div>
+            
+
+            <!-- control board-->
+            <div class="control">
+                <i class="repeat ti-reload"></i>
+                <i class="control-skip ti-control-skip-backward"></i>
+                <div class="play">
+                    <i class="pause ti-control-play"></i>
+                    <i class="pause ti-control-pause"></i>
+                </div>
+                <i class="control-skip ti-control-skip-forward"></i>
+                <i class="song-shuffle ti-control-shuffle"></i>
+            </div>
+            <input type="range" name="progress" id="progress" value="0" step="1" min="0" max="100">
+            <audio id="audio" src=""></audio>
+            
+        </div>
+
+        <!-- List of song -->
+        <div id="songList">
+            
+        </div>
+    </div>
+    <script src="../assets/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+i.active {
+    color:rgb(232, 24, 59);
+}
+
+.container {
+    width: 400px;
+    min-height: 500px;
+    margin: 0 auto;
+    background-color: pink;
+    /* border-radius: 12px; */
+}
+
+.dashBoard {
+    background-color: #b3b0b0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    /* height: 362px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 12px; */
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+
+.dashBoard h6 {
+    display: inline-block;
+    color: red;
+    width: 100%;
+    text-align: center;
+}
+
+.dashBoard h1 {
+    display: inline-block;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    width: 330px;
+    text-align: center;
+}
+
+.dashBoard .cd {
+    width: 200px;
+}
+
+.dashBoard .cd-thumb {
+    background-size: cover;
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    margin-top: 12px;
+}
+
+.dashBoard .control {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    margin-top: 24px;
+    align-items: center;
+}
+
+.dashBoard .control .play {
+    background-color: red;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#progress {
+    /* -webkit-appearance: none; */
+    width: 380px;
+    padding: 6px 0;
+    accent-color: pink;
+}
+
+.dashBoard .play i {
+    font-size: 24px;
+    color: white;
+}
+
+i, #progress {
+    cursor: pointer;
+}
+
+.control .play i:last-child {
+    display: none;
+}
+
+.control.playing .play i:first-child {
+    display: none;
+}
+
+.control.playing .play i:last-child {
+    display: inline-block;
+}
+
+#songList {
+    margin-top: 362px;
+    border: 1px solid rgb(199, 112, 126);
+    min-height: 500px;
+}
+
+#songList .song{
+    background-color: rgb(247, 238, 240);
+    width: 380px;
+    min-height: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 12px;
+    border-radius: 12px;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    cursor: pointer;
+}
+
+#songList .song .img-auth{
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto 0;
+}
+
+#songList .song h6 {
+    color: #999;
+    padding-top: 3px;
+}
+
+#songList .song .more{
+    display: block;
+    align-self: center;
+}
+
+#songList .song.active{
+    background-color: rgb(255, 0, 0);
+}
+
+#songList .song.active h4,
+#songList .song.active h6,
+#songList .song.active .more
+{
+    color: #fff;
+}
