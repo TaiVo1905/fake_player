@@ -98,14 +98,8 @@ const app = {
             image: './assets/imageAuthor/hoaiLam.jpg'
         },
         {
-            name: 'Cô đơn trong nhà mình',
-            singer: 'Hoài Lâm',
-            path: './assets/songs/CÔ ĐƠN TRONG NHÀ MÌNH  HOÀI LÂM.mp3',
-            image: './assets/imageAuthor/hoaiLam.jpg'
-        },
-        {
             name: 'Nước ngoài',
-            singer: 'Dương Mạnh Quỳnh',
+            singer: 'Phan Mạnh Quỳnh',
             path: './assets/songs/nuocNgoai.m4a',
             image: './assets/imageAuthor/phanManhQuynh.jpg'
         }
